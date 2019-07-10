@@ -8,33 +8,45 @@
 	<center>
 		<br>
 		<div>Hello welcome to this simple page! 
-			<p>Difficulty High</p>
+			<p>Difficulty <span id="difficulty-low">Low<span></span></p>
 			<br>
-			<p>In any programing language you feel comfortable</p>
-			<p>You are given an image of a surface photographed by a satellite.</p> 
-			<p>The image is a bitmap where water is marked by '.' and land is marked by '*'.</p> 
-			<p>Adjacent group of '*'s form an island. (Two '*' are adjacent if they are horizontal, vertical or diagonal neighbours). </p>
-			<p>Your task is to print the number of islands in the bitmap.For example:</p>
+			<p>Next Greater Element</p>
+			<p>Given an array, print the Next Greater Element (NGE) for every element. </p> 
+			<p>The Next greater Element for an element x is the first greater element on the right side of x in array.</p> 
+			<p>Elements for which no greater element exist, consider next greater element as -1.</p>
+			<br>
+			<div>
+				<code> <p>For any array, rightmost element always has next greater element as -1.</p> </code>
+				<code> <p>For an array which is sorted in decreasing order, all elements have next greater element as -1.</p> </code>
+				<code> <p>For the input array [4, 5, 2, 25}, the next greater elements for each element are as follows.</p> </code>
+			</div>
 			<div class="input">
 				<p><b>Example 1</b></p>
-				<code>  <p>.........**</p><p>**......***</p><p>...........</p><p>...*.......</p><p>*........*.</p><p>*.........*</p></code>
+				<code><p>Element &nbsp;&nbsp;&nbsp;&nbsp; NGE</p></code>
+				<code><p>4 &nbsp;&nbsp; --> &nbsp;&nbsp; 5</p></code>
+				<code><p>5 &nbsp;&nbsp; --> &nbsp;&nbsp; 25</p></code>
+				<code><p>2 &nbsp;&nbsp; --> &nbsp;&nbsp; 25</p></code>
+				<code><p>25 &nbsp;&nbsp; --> &nbsp;&nbsp; -1</p></code>
 			</div>
 			<br>
-			<p>In this exercise you're going to create a way to find word squares.
+			<div>
+				<p>For the input array [13, 7, 6, 12}, the next greater elements for each element are as follows.</p>
+			</div>
+			<div>
 
-				<p>First, design a way to return true if a given sequence of words is a word square.</p>
-				
-				Second, given an arbitrary list of words, return all the possible word squares it contains. Reordering is allowed.
-				
-				</p>
+			</div>
 			<br>
 			<div class="input">
-				<p>output should be 5</p>
-				<code>  <p>.........22</p><p>11......222</p><p>...........</p><p>...3.......</p><p>4........5.</p><p>4.........5</p></code>
+					<p><b>Example 2</b></p>
+					<code><p>Element &nbsp;&nbsp;&nbsp;&nbsp; NGE</p></code>
+					<code><p>13 &nbsp;&nbsp; --> &nbsp;&nbsp; -1</p></code>
+					<code><p>7 &nbsp;&nbsp; --> &nbsp;&nbsp; 12</p></code>
+					<code><p>6 &nbsp;&nbsp; --> &nbsp;&nbsp; 12</p></code>
+					<code><p>12 &nbsp;&nbsp; --> &nbsp;&nbsp; -1</p></code>
 			</div>
-			<p>Test it out with more maps from <a href="https://github.com/rene415/NewsletterQuestions/tree/master/mapsCountIslands">here</a></p>
+			<p></p>
 			<br>
-			<p>Once your program runs successfully, upload your program file(s) on slack and send it to @rene recieve credit</p>
+			<p>Once your program runs successfully, upload your program file(s) on slack and send it to <span id="rene">@rene</span> recieve credit</p>
 		</div>
 	</center>
 </body>

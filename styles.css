@@ -3,6 +3,20 @@
     border-radius: 5px;
 }
 
+#difficulty-low{
+    color: green;
+}
+
+#difficulty-medium {
+    color: yellow;
+}
+
+#difficulty-high{
+    color: red;
+}
+#rene{
+    color: Blue;
+}
 .input {
     padding: 15px;
 }
