@@ -2,53 +2,74 @@
 <html>
 <head>
 	<title>Newsletter Trivia</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800i&display=swap" rel="stylesheet">
 </head>
 <body>
-	<center>
 		<br>
-		<div>Hello welcome to this simple page! 
-			<p>Difficulty <span id="difficulty-low">Low<span></span></p>
+		<div> 
+            <center>
+            <h1>FT_NEWSLETTER</h1>
+            <p>Difficulty <span id="difficulty-medium">Medium<span></span></p>
+            </center>
 			<br>
-			<p>Next Greater Element</p>
-			<p>Given an array, print the Next Greater Element (NGE) for every element. </p> 
-			<p>The Next greater Element for an element x is the first greater element on the right side of x in array.</p> 
-			<p>Elements for which no greater element exist, consider next greater element as -1.</p>
-			<br>
+			<p><b></b></p>
+			<p>Hopping Jack is standing at the bottom of a long flight of stairs. The bottom of the stairs has number <span class="highlight">0</span>, first step has number <span class="highlight">1</span>, the next step has number <span class="highlight">2</span>, and so on upto infinity</p> 
+			<p>Jack will now perform <span class="highlight">N</span> consecutive actions. The actions are numbered <span class="highlight">1</span> through <span class="highlight">N</span>, in that particular order. When performing action <span class="highlight">X</span>, Jack chooses between two options:</p> 
+                <ul class="listitems">
+                    <li>Either he does nothing</li>
+                    <li>Or he hops exactly X steps up the stairs.</li>
+                </ul>
+            <p>In other words, if Jack starts performing action <span class="highlight">X</span> standing on step <span class="highlight">Y</span>, he will end it either on step <span class="highlight">Y</span>, or on step <span class="highlight">Y+X</span>.</p>
+            <br>
+            <p>For example, if <span class="highlight">N=3</span>, Jack will make three consecutive choices: whether or not to hop <span class="highlight">1</span> step upwards,<span class="highlight">2</span> steps upwards, and then <span class="highlight">3</span> steps upwards.</p>
+            <br>
+            <p>One of the steps is broken. The number of this step is <span class="highlight">K</span>. Jack cannot hop onto this step. </p>
+            <p>You are given the integers <span class="highlight">N</span> and <span class="highlight">K</span>. Compute and print the number of the topmost step that can be reached by Jack provided that Jack starts from the bottom of the stairs at step 0?</p>
+            <br>
+            <center>
 			<div>
-				<code> <p>For any array, rightmost element always has next greater element as -1.</p> </code>
-				<code> <p>For an array which is sorted in decreasing order, all elements have next greater element as -1.</p> </code>
-				<code> <p>For the input array [4, 5, 2, 25}, the next greater elements for each element are as follows.</p> </code>
-			</div>
+				<code> <p>Input Format </p> </code>
+				<code> <p>First line of input contains the integer <span class="highlight">N</span>. </p> </code>
+                <code> <p>Second line of input contains the integer <span class="highlight">K</span>.</p> </code>
+                <br>
+                <code><p>Output Format</p></code>
+                <code><p>Output the result corresponding to the testcase.</p></code>
+                <br>
+                <code><p>Constraints </p></code>
+                <code><p><span class="highlight">1 <= N <= 2000</span></p></code>
+                <code><p><span class="highlight">1 <= K <= 4X10^6</span></p></code>
+            </div>
+            
 			<div class="input">
-				<p><b>Example 1</b></p>
-				<code><p>Element &nbsp;&nbsp;&nbsp;&nbsp; NGE</p></code>
-				<code><p>4 &nbsp;&nbsp; --> &nbsp;&nbsp; 5</p></code>
-				<code><p>5 &nbsp;&nbsp; --> &nbsp;&nbsp; 25</p></code>
-				<code><p>2 &nbsp;&nbsp; --> &nbsp;&nbsp; 25</p></code>
-				<code><p>25 &nbsp;&nbsp; --> &nbsp;&nbsp; -1</p></code>
-			</div>
+                <p><b>Example 1</b></p>
+                <code><p>Input</p></code>
+				<code><p>2<br>2</p></code>
+				<code><p>Output</p></code>
+				<code><p>3</p></code>
+            </div>
 			<br>
 			<div>
-				<p>For the input array [13, 7, 6, 12}, the next greater elements for each element are as follows.</p>
+				<p>The optimal strategy is to hop upwards twice: from step <span class="highlight">0</span> to step <span class="highlight">1</span>, and then from step 1 to step 3. This trajectory avoids the broken step.</p>
 			</div>
 			<div>
-
 			</div>
 			<br>
 			<div class="input">
-					<p><b>Example 2</b></p>
-					<code><p>Element &nbsp;&nbsp;&nbsp;&nbsp; NGE</p></code>
-					<code><p>13 &nbsp;&nbsp; --> &nbsp;&nbsp; -1</p></code>
-					<code><p>7 &nbsp;&nbsp; --> &nbsp;&nbsp; 12</p></code>
-					<code><p>6 &nbsp;&nbsp; --> &nbsp;&nbsp; 12</p></code>
-					<code><p>12 &nbsp;&nbsp; --> &nbsp;&nbsp; -1</p></code>
-			</div>
+				<p><b>Example 2</b></p>
+				<code><p>Input</p></code>
+				<code><p>2<br>1</p></code>
+				<code><p>Output</p></code>
+				<code><p>2</p></code>
+            </div>
+            <div>
+                <p>In this case step <span class="highlight">1</span> is broken, so Jack cannot hop upwards as his first action. The optimal strategy is to first stay on step <span class="highlight">0</span>, and then to hop from step <span class="highlight">0</span> to step <span class="highlight">2</span>.</p>
+            </div>
 			<p></p>
 			<br>
-			<p>Once your program runs successfully, upload your program file(s) on slack and send it to <span id="rene">@rene</span> recieve credit</p>
+            <p>Once your program runs successfully, upload your program file(s) on slack and send it to <span id="rene">@rene</span> recieve credit</p>
+        </center>
 		</div>
-	</center>
 </body>
 </html>
 

@@ -1,3 +1,6 @@
+body{
+    padding: 5%;
+}
 .input {
     background: #eee;
     border-radius: 5px;
@@ -8,7 +11,8 @@
 }
 
 #difficulty-medium {
-    color: yellow;
+    color: orange;
+
 }
 
 #difficulty-high{
@@ -19,4 +23,22 @@
 }
 .input {
     padding: 15px;
+}
+
+.highlight{
+    font-weight: bold;
+    font-size: 29px;
+    font-style: italic;
+}
+p{
+    font-family: Raleway;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+li{
+    font-family: Raleway;
+    font-size: 23px;
+    font-weight: 800;
+    list-style-type: square;
 }
