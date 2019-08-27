@@ -23,6 +23,7 @@ body{
 }
 .input {
     padding: 15px;
+    width: 60%;
 }
 
 .highlight{
@@ -31,14 +32,14 @@ body{
     font-style: italic;
 }
 p{
-    font-family: Raleway;
-    font-size: 23px;
-    font-weight: 800;
+    font-family: 'Yrsa', serif;
+    font-size: 18px;
+    font-weight: 80;
 }
 
 li{
-    font-family: Raleway;
-    font-size: 23px;
+    font-family: 'Yrsa', serif;
+    font-size: 18px;
     font-weight: 800;
     list-style-type: square;
 }
